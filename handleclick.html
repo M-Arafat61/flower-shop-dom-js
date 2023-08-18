@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Event Example</title>
+</head>
+<body>
+<h3>Click Event Example</h3>
+<button id="myButton" onclick="handleClick()">Click me!</button>
+<p id="output">It'll be changed</p>
+
+<script>
+// Function to handle the click event
+function handleClick() {
+    const outputElement = document.getElementById("output");
+    console.log(outputElement.textContent = "Button clicked!");
+}
+
+// Get the button element by its ID
+// const button = document.getElementById("myButton");
+
+// Add a click event listener to the button element
+// button.addEventListener("click", handleClick);
+</script>
+
+</body>
+</html>

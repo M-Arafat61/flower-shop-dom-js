@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="mt-10 ">
+        <section class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5 w-11/12 mx-auto">
+                <div class="card mt-5" >
+                    <img src="./images/pngwing 7.png" class="card-img-top object-contain w-3/4 h-44 mx-auto bg-amber-100 rounded-lg mt-3">
+                    <div class="card-body">
+                      <h5 class="card-title font-medium ">Yellow Tulip</h5>
+                      <p class="mb-2">Yellow flowers represent energy.</p>
+                      <p class="mb-2">Price: $ <span>20</span></p>
+                      <a href="#" class="btn btn-primary rounded-xl" id="btn-buy" onclick="handleClick(this)">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <img src="./images/pngwing 10.png" class="card-img-top object-contain w-3/4 h-44 bg-pink-200 rounded-lg mx-auto mt-3">
+                    <div class="card-body">
+                      <h5 class="card-title font-medium ">Pink Tulip</h5>
+                      <p class="card-text mb-2">Yellow cheerfulness and joy. </p>
+                      <p class="card-text mb-2">Price: $ <span>40</span></p>
+                      <a href="#" class="btn btn-primary rounded-xl" id="btn-buy" onclick="handleClick(this)">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <img src="./images/pngwing 8.png" class="card-img-top object-contain w-3/4 h-44 bg-orange-200 rounded-lg mx-auto mt-3">
+                    <div class="card-body">
+                      <h5 class="card-title font-medium ">Red Rose</h5>
+                      <p class="card-text mb-2">Symbol of love and happiness. </p>
+                      <p class="card-text mb-2">Price: $ <span>50</span></p>
+                      <a href="#" class="btn btn-primary rounded-xl" id="btn-buy" onclick="handleClick(this)">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <ul>
+                      <li class="mb-2 text-xl">Order Details:</li>
+                      <li class="items-container font-medium " id="selected-items">
+                      </li>
+                      <li class="text-lg mt-1 mb-1">Total Price: $<span id="price" class="font-medium" ></span></li>
+                      <li class="text-lg">Discount: $<span id="discount-10">00</span></li>
+                      <hr class="bg-black mt-2 mb-2">
+                      <li class="text-xl">Grand Total: $<span id="grand-total">00</span></li>
+                    </ul>
+                    
+                  </div>
+            </div>
+        </section>
+    </main>
+    <script src="./flower.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
